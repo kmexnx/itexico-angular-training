@@ -1,0 +1,12 @@
+<div class="Body">
+ <p appWarning>Selected Author: {{selectedAuthor}}</p>
+ 
+ <div class="poem-list">
+    <app-poem-list [poems]="poems" (selectPoem)="selectPoem($event)" #poemListRef> </app-poem-list>
+ </div>
+
+ <div class="aside">
+    <app-side-bar></app-side-bar>
+</div>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="SideBar">
+    <!--<ul>
+        <li *ngFor="let author of authors">{{author}}</li>
+    </ul>-->
+    <mat-list>
+        <mat-list-item *ngFor="let author of authors; let i = index;"> 
+            <span matBadge="{{i + 1}}" matBadgeOverlap="false"></span>
+            <div class="author" (click)="setAuthor($event,author)">{{author}}</div> 
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+
+</div>
